@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MyCalc</title>
+  <link rel="icon" type="image/x-icon" href="cal-img.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="header">
+
+  </header>
+  <div class="container">
+    <div class="calculator">
+      <div class="display">
+      </div>
+
+      <div class="buttons">
+        <div class="button" id="ac" onclick="ac()">AC</div>
+        <div class="button" id="div" onclick="ope('/')">/</div>
+        <div class="button" id="mul" onclick="ope('*')">x</div>
+        <div class="button" id="add" onclick="ope('+')">+</div>
+      </div>
+      <div class="buttons">
+        <div class="button" id="1" onclick="add(1)">1</div>
+        <div class="button" id="2" onclick="add(2)">2</div>
+        <div class="button" id="3" onclick="add(3)">3</div>
+        <div class="button" id="sub" onclick="ope('-')">-</div>
+      </div>
+      <div class="buttons1">
+        <div class="button" id="4" onclick="add(4)">4</div>
+        <div class="button" id="5" onclick="add(5)">5</div>
+        <div class="button" id="6" onclick="add(6)">6</div>
+      </div>
+
+        <div class="opebutton" id="equal" onclick="results()">=</div>
+
+      <div class="buttons1">
+        <div class="button" id="7" onclick="add(7)">7</div>
+        <div class="button" id="8" onclick="add(8)">8</div>
+        <div class="button" id="9" onclick="add(9)">9</div>
+      </div>
+      
+        <div class="zerobutton" id="0" onclick="add(0)">0</div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer"> <a href="https://skusman09.github.io/portfolio.github.io/"> <b> created by </b> <span> Shaikh Usman </span> </a> </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
