@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  background-color: black;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 6.5vh;
+  bottom: -43vh;
+  height: fit-content;
+  width: fit-content;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vh;
+  background: #383838;
+  border-radius: 3vh;
+  padding: 9vh 5vh 7vh 5vh;
+  border: 2px solid black;
+}
+
+.display {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  align-items: center;
+  height: 8vh;
+  width: 49vh;
+  background: gray;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  font-size: 40px;
+  padding: 1.8vh;
+  overflow: hidden;
+}
+
+.prev {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 64vh;
+
+}
+
+
+.buttons1 {
+  position: relative;
+  left: 33px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 64vh;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  margin: 1vh;
+  width: 11vh;
+  background: #DEDADA;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 2px;
+  font-size: 35px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+
+}
+
+.button:active {
+  transform: scale(0.8);
+}
+
+.opebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  margin: 1vh;
+  width: 11vh;
+  background: #DEDADA;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 2px;
+  font-size: 35px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.opebutton:active {
+  border: 2px solid #DEDADA;
+  border-radius: 40%;
+  transform: scale(0.8);
+}
+
+.zerobutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  margin: 1vh;
+  width: 38vh;
+  background: #DEDADA;
+  border: 1px solid black;
+  border-radius: 30px;
+  position: relative;
+  right: 7vh;
+  padding: 2px;
+  font-size: 35px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.zerobutton:active {
+  border: 2px solid #DEDADA;
+  transform: scale(0.9);
+}
+
+.opebutton#equal {
+  position: absolute;
+  border-radius: 20px;
+  left: 44vh;
+  bottom: 8vh;
+  height: 37vh;
+  padding: 2px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+#ac {
+  background-color: red;
+}
+
+#div,
+#mul,
+#add,
+#sub,
+#equal {
+  background-color: #FF942B;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  padding-left: 24vh;
+  top: 67rem;
+}
+
+.footer b{
+  color: red;
+}
+
+.footer span {
+  color: #FF942B;
+}
+
+.footer a{
+  text-decoration: none;
+}
